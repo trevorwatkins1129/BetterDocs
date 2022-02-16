@@ -7,3 +7,12 @@ function editorcheck() {
   }
 }
 
+function save() {
+  localStorage.document = document.getElementById("text");
+  alert("Document saved.");
+}
+
+function load() {
+  document.getElementById("text").innerHTML = localStorage.document;
+  alert("Document loaded.");
+}
