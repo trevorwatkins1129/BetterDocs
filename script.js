@@ -1,10 +1,9 @@
 function editorcheck() {
-  // Get the checkbox
-  var checkBox = document.getElementById("switch");
-  // If the checkbox is checked, display the output text
-  if (checkBox.checked == true){
-  document.body.contentEditable = true;
+  const x = document.getElementById("text");
+  if (x.contentEditable == "true") {
+    x.contentEditable = "false";
   } else {
-  document.p.contentEditable = false;
+    x.contentEditable = "true";
   }
 }
+
