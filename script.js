@@ -8,7 +8,8 @@ function editorcheck() {
 }
 
 function save() {
-  localStorage.document = document.getElementById("text");
+  var x = document.getElementById("text");
+  localStorage.document = x;
   alert("Document saved.");
 }
 
