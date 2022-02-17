@@ -65,6 +65,6 @@ input:checked + .slider:before {
   font-size: 15px;
 }
 
-#text {
+#textbox {
   background-color: grey;
 }

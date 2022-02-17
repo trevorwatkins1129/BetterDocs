@@ -8,12 +8,10 @@ function editorcheck() {
 }
 
 function save() {
-  var x = document.getElementById("text");
+  var x = document.getElementById("text").innerHTML;
   localStorage.document = x;
-  alert("Document saved.");
 }
 
 function load() {
   document.getElementById("text").innerHTML = localStorage.document;
-  alert("Document loaded.");
 }
