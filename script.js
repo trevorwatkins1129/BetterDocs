@@ -34,3 +34,12 @@ function download(data, filename, type) {
         }, 0); 
     }
 }
+
+function downloadprep() {
+  let currentDate = new Date();
+  let cDay = currentDate.getDate()
+  let cMonth = currentDate.getMonth() + 1
+  let cYear = currentDate.getFullYear()
+  var y = document.getElementById("text").innerHTML
+  download(y, "betterdocsoutput-" + cDay + "-" + cMonth + "-" + cYear + "", "")
+}
