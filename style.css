@@ -84,7 +84,11 @@ input:checked + .slider:before {
   font-family: sans-serif;
 }
 
-#logo {
-  color: grey;
-  font-style: bold;
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: grey;
+  color: white;
 }
