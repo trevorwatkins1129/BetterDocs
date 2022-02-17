@@ -41,5 +41,6 @@ function downloadprep() {
   let cMonth = currentDate.getMonth() + 1
   let cYear = currentDate.getFullYear()
   var y = document.getElementById("text").innerHTML
-  download(y, "betterdocsoutput-" + cDay + "-" + cMonth + "-" + cYear + "", "")
+  var z = prompt("Enter a Filename.");
+  download(y, z + "-" + cDay + "-" + cMonth + "-" + cYear + ".doc")
 }
