@@ -10,14 +10,22 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>
-  <body>
+    </head>
+    <body>
     <!-- this is the start of content -->
     <!-- Rounded switch -->
     <label class="switch">
-      <input id="switch" type="checkbox" onclick="editorcheck()" checked="checked"/>
-      <span class="slider round"></span> </label
+    <input id="switch" type="checkbox" onclick="editorcheck()" checked="checked"/>
+    <span class="slider round"></span> </label
     >
+    <!-- actual upload which is hidden -->
+    <input type="file" id="actual-btn" hidden/>
+
+    <!-- our custom upload button -->
+    <label id="upload" for="actual-btn">Choose File</label>
+
+    <!-- name of file chosen -->
+    <span id="file-chosen">No file chosen</span>
     <button onclick="save()">Save Document</button>
     <button onclick="load()">Load Document</button>
     <br />
