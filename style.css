@@ -103,3 +103,7 @@ input:checked + .slider:before {
 body {
   background-color: #767B74;
 }
+
+#preview {
+  font-size: 10px
+}
