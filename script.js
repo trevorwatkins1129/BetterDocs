@@ -41,7 +41,7 @@ function downloadprep() {
   let cMonth = currentDate.getMonth() + 1
   let cYear = currentDate.getFullYear()
   var y = document.getElementById("text").innerHTML
-  var z = prompt("Enter a Filename.");
+  var z = localStorage.filename
   download(y, z + "-" + cDay + "-" + cMonth + "-" + cYear + "")
 }
 

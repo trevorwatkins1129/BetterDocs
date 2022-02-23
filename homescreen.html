@@ -3,20 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://cdn.glitch.global/52569bf5-6f02-4cdd-994f-e37cacdcdf9f/55f3c9451a0a4567af7713187077b18c.png?v=1645130965603" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/52569bf5-6f02-4cdd-994f-e37cacdcdf9f/55f3c9451a0a4567af7713187077b18c.png?v=1645130965603"
+    />
     <title>BetterDocs</title>
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-    </head>
-    <body>
+  </head>
+  <body>
     <!-- this is the start of content -->
     <div id="topbar">
-    <img id="logo" src="https://cdn.glitch.global/52569bf5-6f02-4cdd-994f-e37cacdcdf9f/55f3c9451a0a4567af7713187077b18c.png?v=1645130965603" width="100"><br>
+      <img
+        id="logo"
+        src="https://cdn.glitch.global/52569bf5-6f02-4cdd-994f-e37cacdcdf9f/55f3c9451a0a4567af7713187077b18c.png?v=1645130965603"
+        width="100"
+      /><br />
     </div>
-    <p id="preview">test</p><br>
-    <button onclick="location.href='editor.html'" class="button">Open File</button>
+    <div id="previewd"><p id="preview"></p></div>
+    <br />
+    <button onclick="location.href='editor.html'" class="button">
+      Open File
+    </button>
   </body>
 </html>
+<script>
+  document.getElementById("preview").innerHTML = localStorage.filename;
+</script>
