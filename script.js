@@ -40,11 +40,7 @@ function downloadprep() {
   let cDay = currentDate.getDate()
   let cMonth = currentDate.getMonth() + 1
   let cYear = currentDate.getFullYear()
-  var y = document.getElementById("text").innerHTML
+  var y = document.getElementById("text").innerHTML + "\n \n Made with BetterDocs"
   var z = localStorage.filename
   download(y, z + "-" + cDay + "-" + cMonth + "-" + cYear + "")
-}
-
-function v2n() {
-  
 }
