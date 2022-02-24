@@ -40,9 +40,21 @@ function downloadprep() {
   let cDay = currentDate.getDate()
   let cMonth = currentDate.getMonth() + 1
   let cYear = currentDate.getFullYear()
-  var y = document.getElementById("text").innerHTML + "\n \n Made with BetterDocs"
+  var y = document.getElementById("text").innerHTML + "\n \n " + localStorage.watermark
   var z = localStorage.filename
   download(y, z + "-" + cDay + "-" + cMonth + "-" + cYear + "")
 }
 
-fu
+function toggleWatermark() {
+  const x = document.getElementById("Watermark").checked
+  if (x == "true") {
+    const watermark = document.getElementById("WatermarkText").innerHTML
+  } else {
+    const watermark = ""
+  }
+  localStorage.watermark = watermark
+}
+
+function saveWatermark() {
+  
+}
