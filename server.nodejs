@@ -1,0 +1,3 @@
+var node = require("nodejs")
+var port = 3000
+console.log("Project started on port" + port + ".")
