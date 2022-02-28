@@ -48,3 +48,4 @@ function downloadprep() {
 function saveWatermark() {
   localStorage.watermark = document.getElementById("Watermark").value
 }
+
