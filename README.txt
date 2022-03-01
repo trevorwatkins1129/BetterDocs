@@ -1,4 +1,4 @@
-BetterDocs (Version 1.0)
+BetterDocs (Version 2.1.8-beta.4)
 
 Developed by Trevor Watkins
 
