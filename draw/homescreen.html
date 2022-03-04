@@ -18,6 +18,12 @@
     <!-- this is the start of content -->
     <div id="topbar">
       <img
+        id="apps"
+        src="https://cdn.glitch.global/52569bf5-6f02-4cdd-994f-e37cacdcdf9f/apps.png?v=1646401734678"
+        width="50"
+        onclick="location.href='/apps.html'"
+      />
+      <img
         id="logo"
         src="https://cdn.glitch.global/52569bf5-6f02-4cdd-994f-e37cacdcdf9f/55f3c9451a0a4567af7713187077b18c.png?v=1645130965603"
         width="100"
@@ -25,8 +31,8 @@
     </div>
     <div id="previewd"><p id="preview"></p></div>
     <br />
-    <button onclick="location.href='editor.html'" class="button">
-      Open File
+    <button onclick="location.href='/draw/editor.html'" class="button">
+      New Drawing
     </button>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><button
       onclick="location.href='about.html'"
@@ -43,6 +49,3 @@
     </button>
   </body>
 </html>
-<script>
-  document.getElementById("preview").innerHTML = localStorage.filename;
-</script>
