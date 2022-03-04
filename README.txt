@@ -6,5 +6,6 @@ Credits:
 
 1) Mahesh, contentEditable html property
 2) W3Schools, MANY pieces of code
+3) 0shuvo0, draw.html script, css, & html
 
 Made with Glitch 
