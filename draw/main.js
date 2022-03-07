@@ -59,7 +59,5 @@ window.addEventListener("mousemove", (e) => {
 })
 
 function back() {
-  if(prompt("Warning: \n All unsaved progress will be lost! \n Type 'Y' to exit.") == "Y") {
   history.back()
-  }
 }
