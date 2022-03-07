@@ -59,3 +59,16 @@ button{
     background-color: #0f65d4;
 }
 
+.back {
+  transition: transform .5s;
+  position: center;
+}
+
+.back:hover {
+  transform: scale(1.2);
+}
+
+canvas {
+  float: center;
+  vertical-align: center;
+}

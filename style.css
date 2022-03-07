@@ -107,3 +107,7 @@ body {
 #preview {
   font-size: 10px
 }
+
+#apps {
+  vertical-align: top;
+}
