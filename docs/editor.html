@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/52569bf5-6f02-4cdd-994f-e37cacdcdf9f/55f3c9451a0a4567af7713187077b18c.png?v=1645130965603"
+    />
+    <title>BetterDocs</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <div id="topbar">
+      <img
+        onclick="location.href='/index.html'"
+        id="logo"
+        src="https://cdn.glitch.global/52569bf5-6f02-4cdd-994f-e37cacdcdf9f/55f3c9451a0a4567af7713187077b18c.png?v=1645130965603"
+        width="100"
+      /><br />
+      <p id="filename"></p>
+    </div>
+    <!-- Rounded switch -->
+    <label class="switch">
+      <input
+        id="switch"
+        type="checkbox"
+        onclick="editorcheck()"
+        checked="checked"
+      />
+      <span class="slider round"></span>
+    </label>
+    <button class="button" id="savebutton" onclick="save()">
+      Save To Cloud
+    </button>
+    <button class="button" id="loadbutton" onclick="load()">
+      Load From Cloud
+    </button>
+    <button class="button" id="downloadbutton" onclick="downloadprep()">
+      Download
+    </button>
+    <button
+      class="button"
+      id="changefile"
+      onclick="localStorage.filename = prompt('enter new filename'); document.getElementById('filename').innerHTML = localStorage.filename;"
+    >
+      Change Filename
+    </button>
+    <br />
+    <label id="EditViewLabel">Edit View</label>
+    <br /><br /><br /><br />
+    <div id="textbox">
+      <p id="text"></p>
+    </div>
+  </body>
+</html>
+<script>
+  document.getElementById("filename").innerHTML = localStorage.filename;
+</script>
